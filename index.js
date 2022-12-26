@@ -3,6 +3,8 @@ console.log(btn);
 const video = document.querySelector(".background-video");
 console.log(video);
 const fa = document.querySelector(".fa");
+const preloader = document.querySelector(".preloader");
+console.log(preloader);
 
 btn.addEventListener("click", () => {
   console.log("click");
@@ -17,4 +19,8 @@ btn.addEventListener("click", () => {
     fa.classList.remove("fa-pause");
     fa.classList.add("fa-play");
   }
+});
+
+window.addEventListener("load", () => {
+  preloader.style.zIndex = "-2";
 });
